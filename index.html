@@ -3,21 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İlerleme Çubuğu</title>
+    <title>Kahve Dükkanı</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Miniver&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="progress-container">
-            <div class="progress" id="progress"></div>
-            <div class="circle active">1</div>
-            <div class="circle">2</div>
-            <div class="circle">3</div>
-            <div class="circle">4</div>
-        </div>
-        <button class="btn" id="prev" disabled>Önceki</button>
-        <button class="btn" id="next">Sonraki</button>
-    </div>
-    <script src="index.js"></script>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">☕ Kahve</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menü</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Referans</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Best Coffee</h2>
+                    <h3 class="subtitle">Kahvemizle gününüzü güzelleştirin!</h3>
+                    <p class="description">Her çekirdeğin bir hikaye anlattığı ve her fincanın neşe saçtığı kahve cennetimize hoş geldiniz</p>
+                    
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Şimdi Sipariş Et</a>
+                        <a href="#" class="button contact-us">Bizimle İletişime Geç</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="kahve2.png" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="topluluk1.png" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Hakkımızda</h2>
+                    <p class="text">Almanya'nın Berndorf kentindeki Coffee House'da, kahve severler ve sohbet arayanlar için gidilecek bir yer olmaktan gurur duyuyoruz. Misafirlerimizin rahatlayabileceği, dinlenebileceği ve konforlu bir şekilde vakit geçirebileceği, rahat ve davetkar bir atmosferde olağanüstü bir kahve deneyimi sunmaya kendimizi adadık.</p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Menü</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="çay.jpg" alt="sıcak içecekler" class="menu-image">
+                        <h3 class="name">Sıcak İçecekler</h3>
+                        <p class="text">
+                            Sizi ferah ve hafif hissettirecek geniş yelpazede sıcak kahve çeşitleri.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="kahve.jpg" alt="soğuk içecekler" class="menu-image">
+                        <h3 class="name">Soğuk İçecekler</h3>
+                        <p class="text">
+                            Sizi serinletecek kremalı ve köpüklü soğuk kahve.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="baklava1.jpg" alt="Tatlı" class="menu-image">
+                        <h3 class="name">Tatlılar</h3>
+                        <p class="text">
+                            Damak tadınızı doyurur ve sizi bir mutfak şölenine çıkarır.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="hamburger.jpg" alt="Hamburger ve Kızarmış Patates" class="menu-image">
+                        <h3 class="name">Hamburger & Kızarmış Patates</h3>
+                        <p class="text">
+                            Küçük açlığınızı giderecek hızlı atıştırmalıklar.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="çilekli.jpg" alt="Meyveli İçecek" class="menu-image">
+                        <h3 class="name">Meyveli İçecek</h3>
+                        <p class="text">
+                            Ferahlatıcı ve ferahlatıcı hissettiren meyveli ve buzlu içecek.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="combo.jpg" alt="Combo" class="menu-image">
+                        <h3 class="name">Özel Kombolar</h3>
+                        <p class="text">
+                            Sizin favori yiyecek içecek kombonuz.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Referanslar</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="1.webp" alt="User" class="user-image">
+                                <h3 class="name">İlayda Alişan</h3>
+                                <i class="feedback">"Fransız tostu çok hoşuma gitti. Mükemmel dengeli ve zengindi. Tekrar sipariş vereceğim!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="2.webp" alt="User" class="user-image">
+                                <h3 class="name">Aslıhan Güner</h3>
+                                <i class="feedback">"Harika bir espresso karışımı! Yumuşak ve yoğun bir lezzet. Hızlı kargolama da cabası!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Tolga Sarıtaş</h3>
+                                <i class="feedback">"
+                                    Harika moka aroması.Taze ve aromatik.Hızlı kargo!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="5.webp" alt="User" class="user-image">
+                                <h3 class="name">Burak Yörük</h3>
+                                <i class="feedback">"
+                                    Mükemmel kalite! Taze fasulye ve hızlı teslimat. Şiddetle tavsiye ederim."</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="6.jpg" alt="User" class="user-image">
+                                <h3 class="name">Elçin Sangu</h3>
+                                <i class="feedback">"
+                                    Denediğim en iyi kafeinsiz kahve!Yumuşak ve lezzetli.Hemen elime ulaştı."</i>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Galeri</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="11.jpg" alt="Galeri" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="12.jpg" alt="Galeri" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="13.jpg" alt="Galeri" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="14.jpg" alt="Galeri" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="15.jpg" alt="Galeri" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="16.jpg" alt="Galeri" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Bizimle İletişime Geçin</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@coffeeshopwebsite.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 456-78909</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Saturday: 10:00 AM - 3:00 Pm</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Closed</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.codingnepalweb.com</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Adınız" class="form-input" required>
+                    <input type="email" placeholder="E-Mailiniz" class="form-input" required>
+                    <textarea placeholder="Mesajınız" class="form-input" required></textarea>
+                    <button class="submit-button">Gönder</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2024 Coffee Shop</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Gizlilik politikası</a>
+                    <span class="separator">·</span>
+                    <a href="#" class="policy-link">Geri Ödeme politikası</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
